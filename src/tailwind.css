@@ -1,0 +1,29 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/*group utilities*/ 
+
+
+@layer components{
+    .common-div{
+        @apply py-5 px-10 text-white rounded-full m-5 flex items-center justify-center w-1/2 mx-auto
+    }
+    .red-div{
+        @apply bg-red-400 border-red-800
+    }
+}
+
+
+@variants hover{
+    .my-hover{
+        background: green;
+    }
+}
+
+
+@responsive {
+    .bg-gradient{
+        background: linear-gradient (blue, green);
+    }
+}
